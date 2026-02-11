@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(250, 234, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* //signup */
+.container
+{
+    width: 350px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 90px auto;
+}
+
+/* //login */
+.container-two
+{
+    width: 350px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 60px auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+h2 
+{
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+input
+{
+    padding: 12px;
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.btns
+{
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    color: white;
+    background: rgb(5, 128, 5);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btns:hover
+{
+    background: rgb(7, 170, 7);
+}
+
+/* responsive */
+@media (max-width: 768px)
+{
+    .container,
+    .container-two
+    {
+        width: calc(100% - 32px);
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .container,
+    .container-two
+    {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+        padding: 14px;
+        border-radius: 8px;
+    }
+
+    input,
+    .btns
+    {
+        padding: 11px;
+    }
+}
